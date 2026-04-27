@@ -728,6 +728,8 @@ GameObject:
   - component: {fileID: 3115609721728960760}
   - component: {fileID: 2785646276074638300}
   - component: {fileID: 5275070906505703385}
+  - component: {fileID: 2133535171773949094}
+  - component: {fileID: 4250462982833250328}
   m_Layer: 0
   m_Name: Animal_Rooster_Brown
   m_TagString: Untagged
@@ -792,7 +794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a78e6497eb96cf428a9c62d24422e88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
-  speed: 30
+  speed: 10
 --- !u!114 &5275070906505703385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -805,6 +807,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fae4189d98ef0c41855cf6ee15f8a0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
+--- !u!65 &2133535171773949094
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5050258822211245641}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.062485, y: 19.372118, z: 22.154379}
+  m_Center: {x: -0.08392334, y: 9.186062, z: -0.79770565}
+--- !u!114 &4250462982833250328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5050258822211245641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ce7a559d310f53439511216a7bd1fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetetctCollisions
 --- !u!1 &5669709876544980982
 GameObject:
   m_ObjectHideFlags: 0
